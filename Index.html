@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>WebGIS Interaktif</title>
+
+    <!-- LEAFLET -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- LEAFLET DRAW -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+<!-- CONTROL PANEL -->
+<!-- ========================= -->
+
+<div id="toggleControlPanel">
+
+    ☰ 
+
+</div>
+
+<div class="control-panel"
+    id="controlPanel">
+
+    <!-- BUFFER -->
+    <h3>Buffer Tool</h3>
+
+    <p style="font-size: 0.9em; color: #666; margin-bottom: 10px;">
+        <strong>Instruksi:</strong> Klik langsung pada feature (titik/garis/polygon) di peta untuk memilihnya (akan berubah warna hijau). Feature yang dipilih akan ditampilkan di "Hasil Pengukuran".
+    </p>
+
+    <label>Ukuran Buffer</label>
+
+    <input type="number"
+        id="bufferDistance"
+        value="0"
+        min="0">
+
+    <label>Satuan</label>
+
+    <select id="bufferUnit">
+
+        <option value="meters">
+            Meter
+        </option>
+
+        <option value="kilometers">
+            Kilometer
+        </option>
+
+    </select>
+
+    <label>Sistem Pengukuran</label>
+
+    <select id="measurementSystem">
+
+        <option value="metric">
+            Metric
+        </option>
+
+        <option value="imperial">
+            Imperial
+        </option>
+
+    </select>
+
+    <button onclick="createBuffer()">
+
+        Buat Buffer
+
+    </button>
+
+    <button id="deleteBufferBtn">
+
+        Hapus Buffer
+
+    </button>
+
+    <button id="clearSelectionBtn">
+
+        Hapus Seleksi
+
+    </button>
+
+    <hr>
+
+    <!-- DIGITASI -->
+    <h3>Digitasi</h3>
+
+    <button id="drawLineBtn">
+
+        Digitasi Garis
+
+    </button>
+
+    <button id="drawPolygonBtn">
+
+        Digitasi Polygon
+
+    </button>
+
+    <button id="deleteSelectedBtn">
+
+        Hapus Digitasi Terpilih
+
+    </button>
+
+    <button id="deleteAllDigitasiBtn">
+
+        Hapus Semua Digitasi
+
+    </button>
+
+    <hr>
+
+    <!-- HASIL -->
+    <h3>Hasil Pengukuran</h3>
+
+    <div id="measurementResults">
+
+        Belum ada pengukuran
+
+    </div>
+
+</div>
+
+    <!-- ========================= -->
+    <!-- MAP -->
+    <!-- ========================= -->
+
+    <div id="map"></div>
+
+    <!-- ========================= -->
+    <!-- LEAFLET -->
+    <!-- ========================= -->
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- ========================= -->
+    <!-- TURF -->
+    <!-- ========================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+
+    <!-- ========================= -->
+    <!-- LEAFLET DRAW -->
+    <!-- ========================= -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+
+    <!-- ========================= -->
+    <!-- FUNCTION -->
+    <!-- ========================= -->
+
+    <script src="function.js"></script>
+
+</body>
+
+</html>

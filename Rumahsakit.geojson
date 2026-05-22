@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "Rumahsakit",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 5, "NAMOBJ": "Rumah Sakit Ibu Anak St. Madyang", "FCODE": "GI01060100", "REMARK": "Rumah Sakit Khusus", "METADATA": "RBI25KPROVINSISULAWESISELATAN", "SRS_ID": "4326", "JPLYRS": 2, "RSALAMAT": null, "TIPRST": null }, "geometry": { "type": "Point", "coordinates": [ 120.202883797000027, -3.007006233999959 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 6, "NAMOBJ": "Rumah Sakit Umum Sawerigading", "FCODE": "GI01060100", "REMARK": "Rumah Sakit Umum", "METADATA": "RBI25KPROVINSISULAWESISELATAN", "SRS_ID": "4326", "JPLYRS": 1, "RSALAMAT": null, "TIPRST": null }, "geometry": { "type": "Point", "coordinates": [ 120.194561501000067, -2.996105162999925 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 7, "NAMOBJ": "Rumah Sakit Kusta Kalangkalang", "FCODE": "GI01060100", "REMARK": "Rumah Sakit Umum", "METADATA": "RBI25KPROVINSISULAWESISELATAN", "SRS_ID": "4326", "JPLYRS": 1, "RSALAMAT": null, "TIPRST": null }, "geometry": { "type": "Point", "coordinates": [ 120.18240055900003, -2.942950441999926 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 8, "NAMOBJ": "Rumah Sakit Umum Sawerigading", "FCODE": "GI01060100", "REMARK": "Rumah Sakit Umum", "METADATA": "RBI25KPROVINSISULAWESISELATAN", "SRS_ID": "4326", "JPLYRS": 1, "RSALAMAT": null, "TIPRST": null }, "geometry": { "type": "Point", "coordinates": [ 120.177616690000036, -2.940353957999946 ] } }
+]
+}
